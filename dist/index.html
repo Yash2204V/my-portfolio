@@ -3,50 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Varma | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="../public/stylesheets/output.css">
+    <style>
+        #loading-screen {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+    </style>
 </head>
-<body class="bg-zinc-900 w-full h-screen text-white font-mono">
-    <!-- Nav Bar -->
-    <nav class="h-20 border border-zinc-700 rounded-full m-3 mt-4 mx-12 flex justify-between items-center p-4 ">
-        <div>
-            <img class="rounded-full" width="74" src="./images/main-logo.jpeg" alt="logo">
-        </div>
-        <div class="">
-            <ul class="hidden md:flex gap-6 text-2xl cursor-pointer md:gap-10 md:px-14">
-                <li class="hover:text-blue-500">Intro</li>
-                <li class="hover:text-blue-500">Projects</li>
-                <li class="hover:text-blue-500">Skills</li>
-                <li class="hover:text-blue-500">About</li>
-            </ul>
-        </div>
-        <div class="md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-              </svg>
-              
-        </div>
-    </nav>
-
-    <div class="section-1 h-3/4 border border-zinc-700 rounded-lg p-4 mx-12 flex flex-col">
-        <div class="content bg-red-800 w-3/4">
-            <h1>This is H1</h1>
-            <h2>This is H2</h2>
-            <p>This is para</p>
-        </div>
-        <!-- Give Mobile POV First -->
-        <div class="image w-1/4"> 
-            <img class="w-full h-full" src="./images/profile.jpg" alt="">
-        </div>
-    </div>
-    <div class="horizontal border-2 border-blue-700 mt-16 mb-16"></div>
-
-
-    <div class="section-2 h-3/4 border border-zinc-700 rounded-lg p-4 mx-12"></div>
-    <div class="horizontal border-2 border-blue-700 mt-16 mb-16"></div>
-    <div class="section-3 h-3/4 border border-zinc-700 rounded-lg p-4 mx-12"></div>
-    <div class="horizontal border-2 border-blue-700 mt-16 mb-16"></div>
-    <div class="section- h-3/4 border border-zinc-700 rounded-lg p-4 mx-12"></div>
-    
+<body>
+    <div id="loading-screen"></div>
+    <script src="../public/javascripts/loading.js"></script>
 </body>
 </html>
