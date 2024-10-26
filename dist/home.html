@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 
-<body class="bg-zinc-900 w-full h-screen text-white font-mono">
+<body class="bg-zinc-900 w-full h-screen text-white font-mono text-center">
+
     <!-- Nav Bar -->
     <nav id="intro"
         class="h-9 border-2 border-zinc-400 rounded-full m-3 mt-4 flex justify-between items-center p-2 mx-12 sm:mx-32 lg:mx-40">
@@ -19,6 +20,7 @@
                 <a href="#intro" class="hover:text-blue-500">Intro</a>
                 <a href="#skills" class="hover:text-blue-500">Skills</a>
                 <a href="#projects" class="hover:text-blue-500">Projects</a>
+                <a href="#insights" class="hover:text-blue-500">Insights</a>
                 <a href="#about" class="hover:text-blue-500">About</a>
             </ul>
         </div>
@@ -34,74 +36,76 @@
     </nav>
 
     <!-- Section 1 -->
-    <div
-        class="section-1 h-auto lg:h-3/4 border border-zinc-950 rounded-lg mx-6 sm:mx-32 lg:mx-40 flex flex-col justify-center items-center">
-        <div class="border-1 border-zinc-950 h-1/2 w-full md:w-1/2 flex justify-center items-center">
+    <div class="section-1 sm:w-[72%] h-auto lg:h-3/4 rounded-lg mx-6 sm:mx-32 lg:mx-40 flex flex-col justify-center items-center p-3">
+        <div class="text-center flex flex-col sm:flex-row w-full justify-center items-center sm:gap-7">
             <img src="../public/images/profile-1.jpg" alt="" width="200" class="border-2 border-zinc-700 rounded-lg" />
-        </div>
-        <div
-            class="border-1 border-zinc-950 h-[200px] w-full flex flex-col justify-center items-center text-center gap-3">
-            <h1 class="font-mono sm:text-4xl font-extrabold">Hi👋🏻, I am Yash!😇</h1>
-            <h3 class="sm:text-2xl font-thin">
-                A MERN Stack Developer & Web3 Enthusiast.
-            </h3>
-        </div>
-        <div class="flex flex-col mb-3 justify-center items-center">
-            <div class="text-sm font-thin">Wanna Connect?</div>
-            <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/yash-varma-/" target="_blank"><svg
-                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
-                        <path fill="#0288D1"
-                            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
-                        </path>
-                        <path fill="#FFF"
-                            d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
-                        </path>
-                    </svg></a>
-                <a href="https://github.com/Yash2204V" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
-                        y="0px" width="30" height="30" viewBox="0 0 72 72">
-                        <path fill="#FFF"
-                            d="M 36 12 C 22.745 12 12 22.745 12 36 C 12 49.255 22.745 60 36 60 C 49.255 60 60 49.255 60 36 C 60 22.745 49.255 12 36 12 z M 36 20 C 44.837 20 52 27.163 52 36 C 52 43.284178 47.128298 49.420174 40.46875 51.355469 C 40.198559 51.103128 39.941627 50.74363 39.953125 50.285156 C 39.980125 49.233156 39.953125 46.778953 39.953125 45.876953 C 39.953125 44.328953 38.972656 43.230469 38.972656 43.230469 C 38.972656 43.230469 46.654297 43.316141 46.654297 35.119141 C 46.654297 31.957141 45.003906 30.310547 45.003906 30.310547 C 45.003906 30.310547 45.872125 26.933953 44.703125 25.501953 C 43.393125 25.359953 41.046922 26.753297 40.044922 27.404297 C 40.044922 27.404297 38.457406 26.753906 35.816406 26.753906 C 33.175406 26.753906 31.587891 27.404297 31.587891 27.404297 C 30.586891 26.753297 28.239687 25.360953 26.929688 25.501953 C 25.760688 26.933953 26.628906 30.310547 26.628906 30.310547 C 26.628906 30.310547 24.974609 31.956141 24.974609 35.119141 C 24.974609 43.316141 32.65625 43.230469 32.65625 43.230469 C 32.65625 43.230469 31.782197 44.226723 31.693359 45.652344 C 31.180078 45.833418 30.48023 46.048828 29.8125 46.048828 C 28.2025 46.048828 26.978297 44.483766 26.529297 43.759766 C 26.086297 43.045766 25.178031 42.447266 24.332031 42.447266 C 23.775031 42.447266 23.503906 42.726922 23.503906 43.044922 C 23.503906 43.362922 24.285781 43.585781 24.800781 44.175781 C 25.887781 45.420781 25.866281 48.21875 29.738281 48.21875 C 30.196553 48.21875 31.021102 48.11542 31.677734 48.025391 C 31.674106 48.90409 31.663893 49.74536 31.677734 50.285156 C 31.688158 50.700354 31.476914 51.032045 31.236328 51.279297 C 24.726159 49.25177 20 43.177886 20 36 C 20 27.163 27.163 20 36 20 z">
-                        </path>
-                    </svg></a>
-                <a href="https://www.instagram.com/coder_yashv/?hl=en"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
-                        y="0px" width="30" height="30" viewBox="0 0 48 48">
-                        <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
-                            gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#fd5"></stop>
-                            <stop offset=".328" stop-color="#ff543f"></stop>
-                            <stop offset=".348" stop-color="#fc5245"></stop>
-                            <stop offset=".504" stop-color="#e64771"></stop>
-                            <stop offset=".643" stop-color="#d53e91"></stop>
-                            <stop offset=".761" stop-color="#cc39a4"></stop>
-                            <stop offset=".841" stop-color="#c837ab"></stop>
-                        </radialGradient>
-                        <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
-                            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
-                        </path>
-                        <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
-                            gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#4168c9"></stop>
-                            <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
-                        </radialGradient>
-                        <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
-                            d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
-                        </path>
-                        <path fill="#fff"
-                            d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
-                        </path>
-                        <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
-                        <path fill="#fff"
-                            d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
-                        </path>
-                    </svg></a>
+            <div class="mt-6">
+                <h1 class="font-mono sm:text-4xl text-2xl font-extrabold">Hi👋🏻, I am Yash!😇</h1>
+                <h3 class="sm:text-2xl text-sm font-thin mt-4 mb-4">
+                    A MERN Stack Developer & Web3 Enthusiast.
+                </h3>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="text-sm font-thin">Wanna Connect?</div>
+                    <div class="flex gap-3">
+                        <a href="https://www.linkedin.com/in/yash-varma-/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                                viewBox="0 0 48 48">
+                                <path fill="#0288D1"
+                                    d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                                </path>
+                                <path fill="#FFF"
+                                    d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+                                </path>
+                            </svg></a>
+                        <a href="https://github.com/Yash2204V" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                x="0px" y="0px" width="30" height="30" viewBox="0 0 72 72">
+                                <path fill="#FFF"
+                                    d="M 36 12 C 22.745 12 12 22.745 12 36 C 12 49.255 22.745 60 36 60 C 49.255 60 60 49.255 60 36 C 60 22.745 49.255 12 36 12 z M 36 20 C 44.837 20 52 27.163 52 36 C 52 43.284178 47.128298 49.420174 40.46875 51.355469 C 40.198559 51.103128 39.941627 50.74363 39.953125 50.285156 C 39.980125 49.233156 39.953125 46.778953 39.953125 45.876953 C 39.953125 44.328953 38.972656 43.230469 38.972656 43.230469 C 38.972656 43.230469 46.654297 43.316141 46.654297 35.119141 C 46.654297 31.957141 45.003906 30.310547 45.003906 30.310547 C 45.003906 30.310547 45.872125 26.933953 44.703125 25.501953 C 43.393125 25.359953 41.046922 26.753297 40.044922 27.404297 C 40.044922 27.404297 38.457406 26.753906 35.816406 26.753906 C 33.175406 26.753906 31.587891 27.404297 31.587891 27.404297 C 30.586891 26.753297 28.239687 25.360953 26.929688 25.501953 C 25.760688 26.933953 26.628906 30.310547 26.628906 30.310547 C 26.628906 30.310547 24.974609 31.956141 24.974609 35.119141 C 24.974609 43.316141 32.65625 43.230469 32.65625 43.230469 C 32.65625 43.230469 31.782197 44.226723 31.693359 45.652344 C 31.180078 45.833418 30.48023 46.048828 29.8125 46.048828 C 28.2025 46.048828 26.978297 44.483766 26.529297 43.759766 C 26.086297 43.045766 25.178031 42.447266 24.332031 42.447266 C 23.775031 42.447266 23.503906 42.726922 23.503906 43.044922 C 23.503906 43.362922 24.285781 43.585781 24.800781 44.175781 C 25.887781 45.420781 25.866281 48.21875 29.738281 48.21875 C 30.196553 48.21875 31.021102 48.11542 31.677734 48.025391 C 31.674106 48.90409 31.663893 49.74536 31.677734 50.285156 C 31.688158 50.700354 31.476914 51.032045 31.236328 51.279297 C 24.726159 49.25177 20 43.177886 20 36 C 20 27.163 27.163 20 36 20 z">
+                                </path>
+                            </svg></a>
+                        <a href="https://www.instagram.com/coder_yashv/?hl=en"><svg xmlns="http://www.w3.org/2000/svg"
+                                x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                                <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035"
+                                    r="44.899" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#fd5"></stop>
+                                    <stop offset=".328" stop-color="#ff543f"></stop>
+                                    <stop offset=".348" stop-color="#fc5245"></stop>
+                                    <stop offset=".504" stop-color="#e64771"></stop>
+                                    <stop offset=".643" stop-color="#d53e91"></stop>
+                                    <stop offset=".761" stop-color="#cc39a4"></stop>
+                                    <stop offset=".841" stop-color="#c837ab"></stop>
+                                </radialGradient>
+                                <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                                </path>
+                                <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54"
+                                    r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#4168c9"></stop>
+                                    <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                                </path>
+                                <path fill="#fff"
+                                    d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                                </path>
+                                <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                                <path fill="#fff"
+                                    d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
+        </div>
+
+    </div>
     <div id="skills" class="horizontal border-2 border-blue-700 mt-16 mb-16"></div>
+
     <!-- Section 2 -->
-    <div class="section-2 h-auto lg:h-3/4 rounded-lg mx-6 sm:mx-32 lg:mx-40 mt-4">
+    <div class="section-2 h-auto lg:h-3/4 border border-zinc-700 rounded-lg mx-6 sm:mx-32 lg:mx-40 mt-4 p-3">
         <h1 class="text-center text-3xl font-bold mb-8">Skills</h1>
         <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-6">
             <!-- Frontend -->
@@ -180,12 +184,67 @@
     <div id="projects" class="horizontal ctal border-2 border-blue-700 mt-16 mb-16"></div>
 
     <!-- Section 3 -->
+    <div class="section-3 h-3/4 border border-zinc-700 rounded-lg mx-6 sm:mx-32 lg:mx-40">
+        <h1 class="text-center text-3xl font-bold mb-8">Projects</h1>
+        <div class="flex flex-row flex-wrap overflow-y-scroll h-[73%]">
+            <div class=" w-[100%] h-[100%] bg-red-700 border-2 border-zinc-900">
+                <div class="project-heading">This is heading</div>
+                <div class="reference">This is reference</div>
+                <div class="icons">This is icons</div>
 
-    <div class="section-3 h-3/4 border border-zinc-700 rounded-lg mx-6 sm:mx-32 lg:mx-40"></div>
-    <div id="about" class="horizontal border-2 border-blue-700 mt-16 mb-16"></div>
+            </div>
+            <div class=" w-[100%] h-[100%] bg-red-700 border-2 border-zinc-900">
+                <div class="project-heading">This is heading</div>
+                <div class="reference">This is reference</div>
+                <div class="icons">This is icons</div>
+
+            </div>
+            <div class=" w-[100%] h-[100%] bg-red-700 border-2 border-zinc-900">
+                <div class="project-heading">This is heading</div>
+                <div class="reference">This is reference</div>
+                <div class="icons">This is icons</div>
+
+            </div>
+            <div class=" w-[100%] h-[100%] bg-red-700 border-2 border-zinc-900">
+                <div class="project-heading">This is heading</div>
+                <div class="reference">This is reference</div>
+                <div class="icons">This is icons</div>
+
+            </div>
+            <div class=" w-[100%] h-[100%] bg-red-700 border-2 border-zinc-900">
+                <div class="project-heading">This is heading</div>
+                <div class="reference">This is reference</div>
+                <div class="icons">This is icons</div>
+
+            </div>
+            <div class=" w-[100%] h-[100%] bg-red-700 border-2 border-zinc-900">
+                <div class="project-heading">This is heading</div>
+                <div class="reference">This is reference</div>
+                <div class="icons">This is icons</div>
+
+            </div>
+            <div class=" w-[100%] h-[100%] bg-red-700 border-2 border-zinc-900">
+                <div class="project-heading">This is heading</div>
+                <div class="reference">This is reference</div>
+                <div class="icons">This is icons</div>
+
+            </div>
+            <div class=" w-[100%] h-[100%] bg-red-700 border-2 border-zinc-900">
+                <div class="project-heading">This is heading</div>
+                <div class="reference">This is reference</div>
+                <div class="icons">This is icons</div>
+
+            </div>
+        </div>
+    </div>
+    <div id="insights" class="horizontal border-2 border-blue-700 mt-16 mb-16"></div>
+
     <!-- Section 4 -->
+    <div class="section-4 h-3/4 border border-zinc-700 rounded-lg mx-6 sm:mx-32 lg:mx-40"></div>
+    <div id="about" class="horizontal border-2 border-blue-700 mt-16 mb-16"></div>
 
-    <div class="section- h-3/4 border border-zinc-700 rounded-lg mx-6 sm:mx-32 lg:mx-40"></div>
+    <!-- Section 5 -->
+    <div class="section-5 h-3/4 border border-zinc-700 rounded-lg mx-6 sm:mx-32 lg:mx-40"></div>
 </body>
 
 </html>
