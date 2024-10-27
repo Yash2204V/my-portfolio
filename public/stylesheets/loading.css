@@ -11,9 +11,9 @@ body {
 
 .loading-container {
     position: relative;
-    width: 80%;
+    width: 80vw;
     max-width: 600px;
-    height: 50px;
+    height: 300px;
     /* background-color: rgba(255, 255, 255, 0.8); */
     border-radius: 25px;
     overflow: hidden;
@@ -30,10 +30,10 @@ body {
 
 .bird {
     position: absolute;
-    top: -20px;
+    top: 40px;
     left: -50px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-image: url('../images/eagle-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
