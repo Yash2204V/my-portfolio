@@ -32,7 +32,7 @@
     </style>
 </head>
 
-<body class="bg-zinc-950 w-full h-screen text-white font-mono text-center">
+<body id="body" class="bg-zinc-950 w-full h-screen text-white font-mono text-center">
 
     <!-- Nav Bar -->
     <nav id="intro"
@@ -59,7 +59,7 @@
     </nav>
 
     <!-- Fullscreen Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center transform -translate-y-full transition-transform duration-500 ease-in-out z-50 hidden">
+    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-80 hidden flex flex-col items-center justify-center transform -translate-y-full transition-transform duration-500 ease-in-out z-50">
         <ul class="flex flex-col items-center italic font-extrabold space-y-4">
             <a href="#intro" class="hover:text-slate-400 text-white text-2xl transition-transform transform hover:scale-150" onclick="closeMobileMenu()">Intro</a>
             <a href="#projects" class="hover:text-slate-400 text-white text-2xl transition-transform transform hover:scale-150" onclick="closeMobileMenu()">Projects</a>
@@ -456,10 +456,16 @@
     
     
     <script>
+            document.querySelector("#mobile-menu").addEventListener("click", function(event) {
+                if (!event.target.closest("a")) {
+                    document.body.classList.toggle("overflow-hidden");
+                    closeMobileMenu();
+                }
+            });
 
             document.addEventListener('DOMContentLoaded', function() {
             const yearSpan = document.createElement('span');
-            yearSpan.textContent = "© "+ new Date().getFullYear();
+            yearSpan.textContent = "© " + new Date().getFullYear();
             document.querySelector('footer p').insertBefore(yearSpan, document.querySelector('footer p').firstChild);
             });
         function toggleMobileMenu() {
