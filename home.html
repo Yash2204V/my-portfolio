@@ -60,12 +60,12 @@
 
     <!-- Fullscreen Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center transform -translate-y-full transition-transform duration-500 ease-in-out z-50 hidden">
-        <ul class="flex flex-col items-center space-y-4">
-            <a href="#intro" class="text-white text-2xl transition-transform transform hover:scale-110" onclick="closeMobileMenu()">Intro</a>
-            <a href="#projects" class="text-white text-2xl transition-transform transform hover:scale-110" onclick="closeMobileMenu()">Projects</a>
-            <a href="#skills" class="text-white text-2xl transition-transform transform hover:scale-110" onclick="closeMobileMenu()">Skills</a>
-            <a href="#insights" class="text-white text-2xl transition-transform transform hover:scale-110" onclick="closeMobileMenu()">Insights</a>
-            <a href="#about" class="text-white text-2xl transition-transform transform hover:scale-110" onclick="closeMobileMenu()">About</a>
+        <ul class="flex flex-col items-center italic font-extrabold space-y-4">
+            <a href="#intro" class="hover:text-slate-400 text-white text-2xl transition-transform transform hover:scale-150" onclick="closeMobileMenu()">Intro</a>
+            <a href="#projects" class="hover:text-slate-400 text-white text-2xl transition-transform transform hover:scale-150" onclick="closeMobileMenu()">Projects</a>
+            <a href="#skills" class="hover:text-slate-400 text-white text-2xl transition-transform transform hover:scale-150" onclick="closeMobileMenu()">Skills</a>
+            <a href="#insights" class="hover:text-slate-400 text-white text-2xl transition-transform transform hover:scale-150" onclick="closeMobileMenu()">Insights</a>
+            <a href="#about" class="hover:text-slate-400 text-white text-2xl transition-transform transform hover:scale-150" onclick="closeMobileMenu()">About</a>
         </ul>
     </div>
 
@@ -316,18 +316,25 @@
 
     <!-- Section 4 -->
     <div class="section-4 h-[65%] border border-zinc-700 rounded-lg mx-6 sm:mx-32 lg:mx-40">
-        <h1 class="text-center text-3xl font-bold mb-8 mt-3">Insights</h1>
+        <h1 class="text-center text-3xl font-bold mt-3">Insights</h1>
+        <!-- <h3 class="text-center text-2xl font-mono leading-loose">
+            📚✨ My Notion Pages ✨📚
+        </h3> -->
         <div class="carousel flex overflow-x-scroll space-x-4 p-4">
             <!-- Carousel Item 1: Ignite the Vision -->
             <div class="carousel-item flex-shrink-0 w-96 h-80 bg-cover bg-center rounded-lg shadow-lg"
                  style="background-image: url('./public/images/L.webp');">
                 <a href="https://www.notion.so/insight1" target="_blank" class="block w-full h-full">
-                    <div class="overlay bg-black bg-opacity-50 flex flex-col items-center justify-center h-full">
-                        <svg width="150" height="5" viewBox="0 0 150 5" class="mb-2">
-                            <line x1="0" y1="2.5" x2="150" y2="2.5" stroke="#FF5733" stroke-width="5" />
-                        </svg>
-                        <div class="text-[#FF5733] text-3xl font-bold font-cinzel tracking-widest uppercase">Ignite the Vision</div>
-                        <div class="text-[#E5E7EB] text-lg font-semibold font-roboto tracking-wide mt-1">Unlock Potential Within</div>
+                    <div class="overlay bg-black bg-opacity-50 flex flex-col items-center justify-between h-full">
+                        <div></div>
+                        <div class="flex flex-col justify-center items-center">
+                            <svg width="150" height="5" viewBox="0 0 150 5" class="mb-2">
+                                <line x1="0" y1="2.5" x2="150" y2="2.5" stroke="#FF5733" stroke-width="5" />
+                            </svg>
+                            <div class="text-[#FF5733] text-3xl font-bold font-cinzel tracking-widest uppercase">Ignite the Vision</div>
+                            <div class="text-[#E5E7EB] text-lg font-semibold font-roboto tracking-wide mt-1">Unlock Potential Within</div>
+                        </div>
+                        <div class="text-blue-300 text-2xl font-bold font-roboto tracking-wide mt-1 italic hover:text-blue-500 hover:scale-105">📂 <u>Backend Structure</u></div>
                     </div>
                 </a>
             </div>
@@ -336,12 +343,16 @@
             <div class="carousel-item flex-shrink-0 w-96 h-80 bg-cover bg-center rounded-lg shadow-lg"
                  style="background-image: url('./public/images/O.webp');">
                 <a href="https://www.notion.so/insight2" target="_blank" class="block w-full h-full">
-                    <div class="overlay bg-black bg-opacity-50 flex flex-col items-center justify-center h-full">
-                        <svg width="180" height="5" viewBox="0 0 180 5" class="mb-2">
-                            <line x1="0" y1="2.5" x2="180" y2="2.5" stroke="#33C9FF" stroke-width="5" />
-                        </svg>
-                        <div class="text-[#33C9FF] text-3xl font-bold font-cinzel tracking-widest uppercase">Envision Beyond</div>
-                        <div class="text-[#E5E7EB] text-lg font-semibold font-roboto tracking-wide mt-2">Step into Possibilities</div>
+                    <div class="overlay bg-black bg-opacity-50 flex flex-col items-center justify-between h-full">
+                        <div></div>
+                        <div class="flex flex-col justify-center items-center">
+                            <svg width="180" height="5" viewBox="0 0 180 5" class="mb-2">
+                                <line x1="0" y1="2.5" x2="180" y2="2.5" stroke="#33C9FF" stroke-width="5" />
+                            </svg>
+                            <div class="text-[#33C9FF] text-3xl font-bold font-cinzel tracking-widest uppercase">Envision Beyond</div>
+                            <div class="text-[#E5E7EB] text-lg font-semibold font-roboto tracking-wide mt-2">Step into Possibilities</div>
+                        </div>
+                        <div class="text-blue-300 text-2xl font-extrabold font-roboto tracking-wide mt-1 italic hover:text-blue-500 hover:scale-105">🔍 <u>Establish Web App.</u></div>
                     </div>
                 </a>
             </div>
@@ -377,23 +388,23 @@
         
         
     </div>
-    <div id="about" class="horizontal border-2 border-blue-700 mt-16 mb-10"></div>
+    <div id="about" class="horizontal border-2 border-blue-700 mt-16 mb-6"></div>
 
     <!-- Section 5 -->
-    <div class="footer-section h-[40%] text-gray-200 shadow-lg rounded-lg mx-auto text-center">
-        <div class="mb-6">
+    <div class="footer-section text-gray-200 shadow-lg rounded-lg mx-auto text-center mb-10">
+        <div class="mb-4">
             <p class="font-medium text-gray-200">Quick Contact:</p>
             <p>
-                <a href="mailto:yash.v220104@gmail.com" class="text-gray-300 text-sm underline transition hover:text-gray-500">Email ID</a>
+                <a href="mailto:yash.v220104@gmail.com" class="text-blue-500 text-[16px] underline transition hover:text-blue-400">Email ID</a>
             </p>
         </div>
     
         <!-- Navigation Links -->
-        <nav class="flex justify-center space-x-8 text-white mb-8 text-sm font-medium">
+        <nav class="flex justify-center space-x-8 text-white mb-4 text-sm font-medium">
             
-            <a href="#intro" class="font-extralight hover:text-gray-500 transition">Intro</a>
-            <a href="#projects" class="font-extralight hover:text-gray-500 transition">Projects</a>
-            <a href="#skills" class="font-extralight hover:text-gray-500 transition">Skills</a>
+            <a href="#intro" class="font-extralight text-lg hover:scale-105 hover:text-gray-500 transition">Intro</a>
+            <a href="#projects" class="font-extralight text-lg hover:scale-105 hover:text-gray-500 transition">Projects</a>
+            <a href="#skills" class="font-extralight text-lg hover:scale-105 hover:text-gray-500 transition">Skills</a>
             <!-- <a href="#services" class="hover:text-indigo-700 transition">Services</a> -->
             <!-- <a href="#contact" class="hover:text-indigo-700 transition">Contact</a> -->
         </nav>
