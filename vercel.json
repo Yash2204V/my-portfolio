@@ -4,12 +4,7 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
-    },
-      {
-        "src": "tailwind.config.js",
-        "use": "@vercel/static-build"
-      }
-    ],
+    }],
     "routes": [
       {
         "src": "/(.*)",
