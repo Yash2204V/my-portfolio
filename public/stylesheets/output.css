@@ -1040,6 +1040,11 @@ video {
   letter-spacing: 0.1em;
 }
 
+.text-\[\#14a398\] {
+  --tw-text-opacity: 1;
+  color: rgb(20 163 152 / var(--tw-text-opacity));
+}
+
 .text-\[\#15803c\] {
   --tw-text-opacity: 1;
   color: rgb(21 128 60 / var(--tw-text-opacity));
@@ -1192,15 +1197,6 @@ video {
 .text-yellow-600 {
   --tw-text-opacity: 1;
   color: rgb(202 138 4 / var(--tw-text-opacity));
-}
-
-.text-\[orange-400\] {
-  color: orange-400;
-}
-
-.text-\[\#14a398\] {
-  --tw-text-opacity: 1;
-  color: rgb(20 163 152 / var(--tw-text-opacity));
 }
 
 .underline {
